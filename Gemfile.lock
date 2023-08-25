@@ -1,0 +1,48 @@
+PATH
+  remote: .
+  specs:
+    sidekiq_backgrounder (0.1.0)
+      error_extractor (~> 0.1.0)
+      globalid
+      sidekiq
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.0.7.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    awesome_print (1.9.2)
+    concurrent-ruby (1.2.2)
+    connection_pool (2.4.1)
+    error_extractor (0.1.0)
+    globalid (1.1.0)
+      activesupport (>= 5.0)
+    i18n (1.14.1)
+      concurrent-ruby (~> 1.0)
+    minitest (5.19.0)
+    rack (3.0.8)
+    rake (13.0.6)
+    redis-client (0.16.0)
+      connection_pool
+    sidekiq (7.1.2)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.14.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  awesome_print
+  minitest (~> 5.0)
+  rake (~> 13.0)
+  sidekiq_backgrounder!
+
+BUNDLED WITH
+   2.4.10
